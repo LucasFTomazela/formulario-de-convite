@@ -4,7 +4,7 @@ select {
   appearance: none;
   width: 100%;
   border-radius: 8px;
-  border: 2px solid var(--input-stroke);
+  border: 1px solid var(--input-stroke);
 
   background-color: var(--input-base);
 
@@ -26,30 +26,19 @@ label {
 input:focus,
 select:focus,
 textarea:focus {
-  border: 2px solid var(--brand-light);
+  border: 1px solid var(--brand-light);
   color: var(--text-body);
 
   outline: none; /* Remove o contorno padrão */
 }
 
-/* input[type="date"] {
-  position: relative;
-  &::-webkit-calendar-picker-indicator {
-    opacity: 0;
-  }
+/* Remove o estilo padrão do input de data */
+input[type="date"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    background: url(../../assets/icons/calendar-03.svg) center/contain;
-    right: 16px;
-    width: 20px;
-    height: 20px;
-
-    top: 50%;
-    transform: translateY(-50%);
-  }
-} */
 /* 
 select {
   background: url(../../assets/icons/arrow-down-01.svg) no-repeat
