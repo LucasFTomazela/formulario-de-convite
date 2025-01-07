@@ -15,5 +15,61 @@
       rel="stylesheet"
     />
   </head>
-  <body></body>
+  <body>
+    <div id="app">
+      <aside>
+        <figure>
+          <img
+            src="assets/Background.png"
+            alt="Pedaço de bolo de aniversário"
+          />
+
+          <figcaption>
+            <img src="/assets/Logo.svg" alt="Logo Festivite" />
+            <h1>Festivite</h1>
+            <p>Crie um convite digital para o seu evento</p>
+          </figcaption>
+        </figure>
+      </aside>
+      <main>
+        <div class="main-container">
+          <h2>Crie seu convite</h2>
+          <form method="post" enctype="multipart/form-data">
+            <fieldset class="about-event">
+              <legend>Sobre o evento</legend>
+              <div class="input-wrapper">
+                <label for="title">Título</label>
+                <input
+                  id="title"
+                  name="title"
+                  type="text"
+                  placeholder="Nome do evento"
+                />
+              </div>
+              <div>
+                <div class="input-wrapper">
+                  <label for="start">Inicio</label>
+                  <input
+                    type="date"
+                    name="start"
+                    id="start"
+                    placeholder="DD/MM/AAAA, --:--"
+                  />
+                </div>
+                <div class="input-wrapper">
+                  <label for="end">Fim</label>
+                  <input
+                    type="date"
+                    name="end"
+                    id="end"
+                    placeholder="DD/MM/AAAA, --:--"
+                  />
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>

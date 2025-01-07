@@ -1,0 +1,102 @@
+input,
+textarea,
+select {
+  appearance: none;
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid var(--input-stroke);
+
+  background-color: var(--input-base);
+
+  padding: 12px 16px;
+
+  color: var(--text-body);
+  font: var(--body-md-rg);
+  transition: border-color 0.3s ease;
+}
+
+label {
+  font: var(--body-sm-rg);
+  color: var(--text-body);
+
+  display: block;
+  margin-bottom: 12px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border: 2px solid var(--brand-light);
+  color: var(--text-body);
+
+  outline: none; /* Remove o contorno padrão */
+}
+
+/* input[type="date"] {
+  position: relative;
+  &::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: url(../../assets/icons/calendar-03.svg) center/contain;
+    right: 16px;
+    width: 20px;
+    height: 20px;
+
+    top: 50%;
+    transform: translateY(-50%);
+  }
+} */
+/* 
+select {
+  background: url(../../assets/icons/arrow-down-01.svg) no-repeat
+    calc(100% - 16px);
+} */
+
+/* .address .flex {
+  gap: 20px;
+}
+
+.input-wrapper:has([disabled]) {
+  opacity: 0.5;
+} */
+
+/* input {
+  &[disabled] {
+    background-color: var(--stroke-disable);
+
+    border: 1px solid var(--stroke-default);
+
+    color: var(--text-primary);
+  }
+
+  &:invalid {
+    border: 2px solid var(--semantic-error);
+  }
+
+  & + small {
+    font: var(--text-sm);
+    color: #78716c;
+
+    display: inline-block;
+    margin-top: 4px;
+  }
+
+  &[required] + .error {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    font: var(--text-sm);
+    color: var(--semantic-error);
+
+    margin-top: 4px;
+  }
+
+  &:not(:focus):valid + .error {
+    display: none;
+  }
+} */

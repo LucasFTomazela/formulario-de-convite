@@ -44,18 +44,23 @@
   --font-baloo2: "Baloo 2", serif;
   --font-openSans: "Open Sans", serif;
 
-  --logo: 400 2.5rem / auto var(--font-leckerliOne);
+  --logo: 400 2.5rem var(--font-leckerliOne);
 
-  --heading-md: 700 1.75rem / auto var(--font-baloo2);
-  --heading-sm: 700 1.125rem / auto var(--font-baloo2);
+  --heading-md: 700 1.75rem var(--font-baloo2);
+  --heading-sm: 700 1.125rem var(--font-baloo2);
 
   /* sb = SemiBold */
-  --body-md-sb: 600 1rem / auto var(--font-openSans);
-  --body-sm-sb: 600 0.875rem / auto var(--font-openSans);
-  --body-xs-sb: 600 0.75rem / auto var(--font-openSans);
+  --body-md-sb: 600 1rem var(--font-openSans);
+  --body-sm-sb: 600 0.875rem var(--font-openSans);
+  --body-xs-sb: 600 0.75rem var(--font-openSans);
 
   /* rg = Regular */
-  --body-md-rg: 400 1rem / auto var(--font-openSans);
-  --body-sm-rg: 400 0.875rem / auto var(--font-openSans);
-  --body-xs-rg: 400 0.75rem / auto var(--font-openSans);
+  --body-md-rg: 400 1rem var(--font-openSans);
+  --body-sm-rg: 400 0.875rem var(--font-openSans);
+  --body-xs-rg: 400 0.75rem var(--font-openSans);
+}
+
+body {
+  background-color: var(--shape-background);
+  color: var(--text-heading);
 }

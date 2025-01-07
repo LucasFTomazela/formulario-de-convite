@@ -1,0 +1,76 @@
+#app {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 440px 820px;
+  gap: 20px;
+
+  padding: 20px;
+
+  overflow: hidden;
+  height: 100vh;
+  margin-inline: auto;
+}
+
+aside {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+aside {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+figure {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 400px;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  border-radius: 12px;
+}
+
+figcaption {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  padding: 32px;
+}
+
+figcaption img {
+  width: 46px;
+  margin-bottom: 10px;
+}
+
+figcaption h1 {
+  font: var(--logo);
+  color: var(--pink);
+}
+
+figcaption p {
+  font: 300 1rem var(--font-openSans);
+  color: var(--text-heading);
+}
+
+main {
+  overflow: auto;
+  background-color: var(--shape-body);
+  width: 100%;
+}
+
+.main-container {
+  margin: 80px 130px;
+
+  h2 {
+    font: var(--heading-md);
+  }
+}
